@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+}
+
+.x-container {
+  @apply md:w-[80%] mx-auto;
+}
+.flexCol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.btn{
+  transition: 0.2s;
+  cursor: pointer;
+  border: 2px solid #3C7305;
+}
+.btn:hover{
+  color: #3C7305;
+  background-color: white;
+}
+.activeOption{
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 5px;
+}
+.textfields{
+  background-color: rgba(red, green, blue, 0);
+  border: 1px solid rgb(156, 156, 156);
+  font-size: 18px;
+  padding: 2px 10px;
+  margin-top: 0.5em;
+  border-radius: 10px;
+
+}
