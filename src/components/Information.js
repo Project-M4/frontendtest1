@@ -6,7 +6,14 @@ import MoreInfo from './MoreInfo';
 const Information = ({ markers, selectedMarker, onSelectMarker }) => {
     const [selectedOption, setSelectedOption] = useState('previousData'); // Initialize with 'previousData'
     const [selectedLocationId, setSelectedLocationId] = useState(null); // Initialize selectedLocationId state
-
+    const [sortOrder, setSortOrder] = useState('lowToHigh'); // Initialize sort order
+    const sortedMarkers = () => {
+      if (sortOrder === 'lowToHigh') {
+        return markers.sort((a, b) => a.methane - b.methane);
+      } else {
+        return markers.sort((a, b) => b.methane - a.methane);
+      }
+    };
 
   if (!selectedMarker) {
     return (
@@ -14,7 +21,29 @@ const Information = ({ markers, selectedMarker, onSelectMarker }) => {
       <div className=" overflow-y-scroll scrollbar-hide absolute z-44 w-[35vw] h-[85vh] bg-accent top-[50px] right-[50px] rounded-[20px] border-[1px] border-[#979696] px-[2%] py-[30px] bg-opacity-[0.5]">
         <div className='flex justify-between'>
         <p className='font-[500]] text-[24px]'>Suggested Locations:</p>
+        <div className="">
+          <p className="font-[500] text-[16px]">Sort by:</p>
+          <select
+            className='bg-accent border-[1px] border-[#979696]  rounded-[5px] py-[3px] px-[10px] text-secondary mb-[1em]'
+            value={sortOrder}
+            onChange={(e) => setSortOrder(e.target.value)}
+          >
+            <option value="lowToHigh">Low to High</option>
+            <option value="highToLow">High to Low</option>
+          </select>
         </div>
+        </div>
+        {sortedMarkers().map((marker, index) => (
+        <div key={index} onClick={() => onSelectMarker(marker)} className="cursor-pointer flex justify-between mt-[20px] text-[20px] bg-white px-[30px] py-[30px] border-[1px] border-[#979696] rounded-[20px]">
+          <div className="">
+            <p className="text-[18px]">{marker.name}</p>
+            <p className="text-[14px] text-[#848383]">Site type: {marker.siteType}</p>
+          </div>
+          <div className="">
+            <p className="text-[30px] font-bold text-secondary">{marker.methane} <span className="text-[14px] text-black font-normal">ppb</span></p>
+          </div>
+        </div>
+      ))}
         {markers.map((marker, index) => (
           <div key={index} onClick={() => onSelectMarker(marker)} className='cursor-pointer flex justify-between mt-[20px] text-[20px] bg-white px-[30px] py-[30px] border-[1px] border-[#979696] rounded-[20px]'>
             <div className=''>
