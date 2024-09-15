@@ -30,10 +30,6 @@ const PreviousData = ({ selectedMarker }) => {
   const minMethaneEmissions = Math.min(...chartData.map((row) => row.methaneEmissions));
   const meanMethaneEmissions = chartData.reduce((acc, row) => acc + row.methaneEmissions, 0) / chartData.length;
 
-  console.log("Chart data: ", chartData);
-  console.log("Max methane emissions: ", maxMethaneEmissions);
-  console.log("Min methane emissions: ", minMethaneEmissions);
-  console.log("Mean methane emissions: ", meanMethaneEmissions);
 
   const handleDaysChange = (event) => {
     setDays(event.target.value);
