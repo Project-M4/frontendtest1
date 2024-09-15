@@ -16,7 +16,7 @@ const PreviousData = ({ selectedMarker }) => {
   const [days, setDays] = useState(30); // default to 30 days
 
   React.useEffect(() => {
-    csv('/methane-data.csv').then((data) => {
+    csv('/MonkeyKing.csv').then((data) => {
       setData(data);
     });
   }, []);

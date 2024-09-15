@@ -83,7 +83,7 @@ const Map = () => {
  
     },
 {
-      name: '14401 FM 3503, Midland',
+      name: '14401 FM 3503 Midland',
       temperature: 25,
       siteType: 'gas plant',
       latitude: 31.784043,
@@ -155,7 +155,7 @@ const Map = () => {
  
     },
 {
-      name: 'Van Horn, Texas',
+      name: 'Van Horn Texas',
       temperature: 25,
       siteType: 'gas fields/pipeline',
       latitude: 31.428996,
