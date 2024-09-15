@@ -39,7 +39,7 @@ const Information = ({ markers, selectedMarker, onSelectMarker }) => {
             </div>
             <div className=''>
                 <p className='text-[30px] font-bold text-secondary'>{selectedMarker.methane} <span className='text-[14px] text-black font-normal'>ppb</span></p>
-                <a href={selectedMarker.gmapsLink} className='px-[1em] py-[5px] bg-secondary text-white text-[16px] mt-[1em] block mx-auto rounded-[10px]'>Google maps</a>
+                <a href={selectedMarker.gmapsLink}   target="_blank"  className='px-[1em] py-[5px] bg-secondary text-white text-[16px] mt-[1em] block mx-auto rounded-[10px]'>Google maps</a>
             </div>
       </div>
       <div className='grid grid-cols-3 w-full mt-[1em] px-[2.5em] py-[5px] border-b-[3px] border-[#cfcfcf]' id='options'>
