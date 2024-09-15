@@ -11,7 +11,7 @@ const Information = ({ markers, selectedMarker, onSelectMarker }) => {
   if (!selectedMarker) {
     return (
         
-      <div className=" overflow-y-scroll scrollbar-hide absolute z-44 w-[35vw] h-[80vh] bg-accent top-[50px] right-[50px] rounded-[20px] border-[1px] border-[#979696] px-[2%] py-[30px]">
+      <div className=" overflow-y-scroll scrollbar-hide absolute z-44 w-[35vw] h-[85vh] bg-accent top-[50px] right-[50px] rounded-[20px] border-[1px] border-[#979696] px-[2%] py-[30px] bg-opacity-[0.5]">
         <div className='flex justify-between'>
         <p className='font-[500]] text-[24px]'>Suggested Locations:</p>
         </div>
@@ -31,7 +31,7 @@ const Information = ({ markers, selectedMarker, onSelectMarker }) => {
   }
 
   return (
-    <div className=" overflow-y-scroll scrollbar-hide absolute z-44 w-[35vw] h-[80vh] bg-accent top-[50px] right-[50px] rounded-[20px] border-[1px] border-[#979696] ">
+    <div className=" overflow-y-scroll scrollbar-hide absolute z-44 w-[35vw] h-[85vh] bg-accent top-[50px] right-[50px] rounded-[20px] border-[1px] border-[#979696] bg-opacity-[0.5] ">
       <div className='flex justify-between px-[2.5em] py-[30px]'>
       <div className=''>
                 <p className='text-[30px] font-semibold'>{selectedMarker.name} </p>
