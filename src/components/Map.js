@@ -42,6 +42,7 @@ const Map = () => {
       seaLevelPressure: 1024 ,
       uvIndex: 6,
       gmapsLink: "https://www.google.com/maps/place/32%C2%B030'53.4%22N+101%C2%B031'21.7%22W/@32.5149701,-101.5249759,432m/data=!3m1!1e3!4m4!3m3!8m2!3d32.514825!4d-101.522698?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D",
+      locationId: 'big-spring',
 
  
     },
@@ -60,7 +61,7 @@ const Map = () => {
       seaLevelPressure: 1024 ,
       uvIndex: 6,
       gmapsLink: 'https://www.google.com/maps/place/EnLink+Midstream+MidMar+West+Plant/@32.1650552,-102.2356886,3119m/data=!3m1!1e3!4m12!1m5!3m4!2zMzLCsDA5JzU0LjIiTiAxMDLCsDEzJzMxLjQiVw!8m2!3d32.1650556!4d-102.2253889!3m5!1s0x86fbe890773d335b:0xf2786e9339d1ca22!8m2!3d32.1641669!4d-102.2249999!16s%2Fg%2F11ddzhy7cy?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D',
-
+      locationId: 'enlink-plant',
  
     },
 {
@@ -77,6 +78,7 @@ const Map = () => {
       seaLevelPressure: 1024 ,
       uvIndex: 6,
       gmapsLink: "https://www.google.com/maps/place/31%C2%B052'47.5%22N+102%C2%B013'47.2%22W/@31.8758981,-102.1933463,2088m/data=!3m1!1e3!4m4!3m3!8m2!3d31.879855!4d-102.22978?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D",
+      locationId: 'midland-school-district',
 
  
     },
@@ -94,6 +96,7 @@ const Map = () => {
       seaLevelPressure: 1024 ,
       uvIndex: 6,
       gmapsLink: "https://www.google.com/maps/place/31%C2%B047'02.6%22N+102%C2%B014'56.4%22W/@31.7825583,-102.2510511,1296m/data=!3m1!1e3!4m4!3m3!8m2!3d31.784043!4d-102.248992?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D",
+      locationId: '14401-fm-3503-midland',
 
  
     },
@@ -111,6 +114,7 @@ const Map = () => {
       seaLevelPressure: 1024 ,
       uvIndex: 6,
       gmapsLink: "https://www.google.com/maps/place/31%C2%B050'30.5%22N+103%C2%B019'10.7%22W/@31.8339733,-103.3183396,4571m/data=!3m1!1e3!4m4!3m3!8m2!3d31.8418056!4d-103.3196389?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D",
+      locationId: 'etc-gas-fieldpipeline',
 
  
     },
@@ -128,6 +132,7 @@ const Map = () => {
       seaLevelPressure: 1024 ,
       uvIndex: 6,
       gmapsLink: "https://www.google.com/maps/place/31%C2%B019'48.2%22N+103%C2%B030'20.3%22W/@31.3312023,-103.50641,939m/data=!3m1!1e3!4m4!3m3!8m2!3d31.330043!4d-103.505639?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D",
+      locationId: 'kinetik-pecos-plant',
 
  
     },
@@ -145,6 +150,7 @@ const Map = () => {
       seaLevelPressure: 1024 ,
       uvIndex: 6,
       gmapsLink: "https://www.google.com/maps/place/35%C2%B038'43.2%22N+101%C2%B025'32.9%22W/@35.6450594,-101.4292365,1271m/data=!3m1!1e3!4m4!3m3!8m2!3d35.645328!4d-101.425803?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D",
+      locationId: '9201-farm-rd',
 
  
     },
@@ -162,6 +168,7 @@ const Map = () => {
       seaLevelPressure: 1024 ,
       uvIndex: 6,
       gmapsLink: "https://www.google.com/maps/place/31%C2%B025'44.4%22N+104%C2%B043'12.8%22W/@31.4286162,-104.7237507,1119m/data=!3m1!1e3!4m4!3m3!8m2!3d31.428996!4d-104.720228?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D",
+      locationId:  'van-horn-texas',
 
  
     },
@@ -179,7 +186,7 @@ const Map = () => {
       seaLevelPressure: 1024 ,
       uvIndex: 6,
       gmapsLink: "https://www.google.com/maps/place/31%C2%B026'44.9%22N+101%C2%B027'44.7%22W/@31.4497512,-101.4656298,3438m/data=!3m1!1e3!4m4!3m3!8m2!3d31.445806!4d-101.462403?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D",
-
+      locationId:  'reagan-county-gas-fields',
  
     },
     // Add more markers to this array
