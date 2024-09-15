@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const Predict = () => {
+const Predict = ({ selectedMarker }) => {
+    console.log(`Selected location ID: ${selectedMarker.locationId}`);
+
   const [formData, setFormData] = useState({
     aerosolHeight: '',
     temperature: '',
@@ -11,6 +13,7 @@ const Predict = () => {
     windSpeed: '',
     seaLevelPressure: '',
     uvIndex: '',
+    locationId: selectedMarker.locationId,
   });
 
   const [prediction, setPrediction] = useState('');

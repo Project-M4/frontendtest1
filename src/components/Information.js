@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import PreviousData from './PreviousData';
 import Predict from './Predict';
 import MoreInfo from './MoreInfo';
-import SearchBar from './SearchBar'
 
 const Information = ({ markers, selectedMarker, onSelectMarker }) => {
     const [selectedOption, setSelectedOption] = useState('previousData'); // Initialize with 'previousData'
+    const [selectedLocationId, setSelectedLocationId] = useState(null); // Initialize selectedLocationId state
+
 
   if (!selectedMarker) {
     return (
@@ -64,7 +65,12 @@ const Information = ({ markers, selectedMarker, onSelectMarker }) => {
 
       {selectedOption === 'previousData' && <PreviousData selectedMarker={selectedMarker} />}
       {selectedOption === 'moreInfo' && <MoreInfo selectedMarker={selectedMarker} />}
-      {selectedOption === 'predict' && <Predict selectedMarker={selectedMarker} />}
+      {selectedOption === 'predict' && (
+        <Predict
+          selectedMarker={selectedMarker}
+          // Pass selectedLocationId as a prop
+        />
+      )}
     </div>
   );
 };
