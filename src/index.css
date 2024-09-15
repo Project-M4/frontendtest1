@@ -15,6 +15,10 @@
 
 body{
   font-family: "Poppins", sans-serif;
+  top: 0;
+  right: 0;
+  left: 0;
+  overflow-x: hidden;
 }
 
 .x-container {
@@ -46,5 +50,19 @@ body{
   padding: 2px 10px;
   margin-top: 0.5em;
   border-radius: 10px;
+
+}
+.locationslistitems{
+  transition: 0.2s ease-in;
+  background: #fff;
+}
+.locationslistitems:hover{
+  background: rgba(160, 160, 160, 0.1);
+}
+.leaflet-control-zoom {
+  display: none;
+}
+.rotateimg{
+  transform: rotate(20deg);
 
 }
