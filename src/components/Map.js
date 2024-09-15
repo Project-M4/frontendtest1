@@ -28,7 +28,7 @@ const Map = () => {
     {
       name: 'Midland',
       temperature: 25,
-      siteType: 'gas plant',
+      siteType: 'oil plant',
       latitude: 31.9973,
       longitude: -102.0779,
       methane: 1900,
